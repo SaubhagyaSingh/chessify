@@ -12,6 +12,7 @@ class Collection(models.Model):
 
 # Create your models here.
 class Product(models.Model):
+    slug = models.SlugField()
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=5, decimal_places=2)
@@ -42,8 +43,7 @@ class Customer(models.Model):
 
 class Meta:
     db_table = "store_customers"
-    indexes = [
-        models.Index(fields=["last_name", "first_name"])]
+    indexes = [models.Index(fields=["last_name", "first_name"])]
 
 
 class Order(models.Model):

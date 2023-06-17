@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "store",
     "tags",
     "debug_toolbar",
+    "like",
 ]
 
 INTERNAL_IPS = [
