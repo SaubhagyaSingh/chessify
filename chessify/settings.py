@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "tags",
     "debug_toolbar",
     "like",
+    "chessify",
 ]
 
 INTERNAL_IPS = [
